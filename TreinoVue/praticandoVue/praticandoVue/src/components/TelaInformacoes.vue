@@ -2,7 +2,8 @@
   <div class="fundo">
 
     <div class="classe4">
-      <img class="classe4" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Pink_ribbon.svg" alt="Logo" width="90px"
+      <img class="classe4" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Pink_ribbon.svg" alt="Logo"
+           width="90px"
            height="90px"/>
       <h1 class="classe4">Breast-Cancer</h1>
     </div>
@@ -92,18 +93,15 @@
         </b-form-group>
       </b-alert>
 
-      <div class="resultado">
-      <b-alert v-model="aparecer" :variant="tipoAlert" show>{{ mensagem }}</b-alert>
-      </div>
-      <!--<b-button @click="showDismissibleAlert=true">-->
-      <!--Show dismissible alert-->
-      <!--</b-button>-->
-
-
       <div class="classe2">
         <b-button type="submit" variant="primary">Submit</b-button>
         <b-button type="reset" variant="danger">Reset</b-button>
       </div>
+
+      <div class="resultado">
+        <b-alert v-model="aparecer" :variant="tipoAlert" show>{{ mensagem }}</b-alert>
+      </div>
+
     </b-form>
   </div>
 </template>
@@ -207,18 +205,16 @@
 <style scoped>
   .classe1 {
     display: inline-block;
-    margin-left: 10px;
   }
 
   .classe2 {
-    margin-top: 200px;
+    margin-top: 80px;
 
   }
 
   .fundo {
     padding: 30px;
     background-color: antiquewhite;
-    /*!*background-repeat: no-repeat;*!*/
     position: absolute;
     width: 100%;
     height: 100%;
@@ -229,7 +225,6 @@
   .alerta {
     margin-top: 50px;
     padding-top: 30px;
-    padding-left: 10px;
   }
 
   .classe4 {
@@ -237,7 +232,7 @@
   }
 
   .resultado {
-    margin-top: 50px;
+    margin-top: 80px;
   }
 
 
